@@ -1,6 +1,6 @@
-FROM eclipse-temurin:11-jre-jammy
+FROM ubuntu:22.04
 
-RUN apt-get update -yy && DEBIAN_FRONTEND=noninteractive apt-get -y install maven
+RUN apt-get update -yy && DEBIAN_FRONTEND=noninteractive apt-get -y install openjdk-11-jdk maven
 
 RUN mkdir -p /nexmark-source
 RUN mkdir -p /nexmark
