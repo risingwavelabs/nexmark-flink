@@ -9,3 +9,5 @@ COPY . /nexmark-source
 RUN cd /nexmark-source/nexmark-flink && ./build.sh && tar -zxvf nexmark-flink.tgz && mv nexmark-flink/* /nexmark
 
 WORKDIR /nexmark
+
+ENTRYPOINT ["/bin/bash"]
